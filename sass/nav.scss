@@ -1,0 +1,78 @@
+.nav{
+    grid-column: 1 /-1;
+    background-color: #fff;
+
+    &__wrapper{
+        width: 95%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        height: 185px;
+        display: flex;
+        align-items: center;
+
+        .logo{
+            width: 40%;
+        }
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+    }
+    
+    &__item{
+        padding: 0 20px;
+}
+    
+    &__link{
+        text-decoration: none;
+        color: $color-dark-1;
+        font-size: .8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: all .3s;
+
+        span{
+            text-transform: none;
+        }
+        &:hover{
+        color: $color-light-1;
+        }
+    }
+    
+    &__icon-box{
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1.5%;
+
+        .icon-search{
+            width: 25px;
+            transition: all .3s;
+            fill: $color-light-1;
+
+            &:hover{
+                transform: rotate(-20deg);
+                fill: $color-dark-1;
+            }
+        }
+        .icon-cart{
+            width: 25px;
+            transition: all .3s;
+            fill: $color-light-1;
+            
+            &:hover{
+                transform: translateX(7px);
+                fill: $color-dark-1;
+            }
+        }
+    }
+}

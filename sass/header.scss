@@ -1,0 +1,171 @@
+.header-left{
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    background-color: #000;
+    background-blend-mode: multiply;
+    overflow: hidden;
+
+    &__wrapper{
+        height: 100%;
+        background-image: url(../img/hero-1.jpg);
+        background-size: cover;
+        transition: all .3s;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, max-content);
+        align-items: flex-end;
+        
+        &:hover{
+            background-image: linear-gradient(rgba(#000, .3), rgba(#000, .3)), url(../img/hero-1.jpg);
+            transform: scale(1.03);
+        }
+    }
+
+    &__text-box{
+        grid-row: 2 / 3;
+        margin-left: 5rem;
+
+        .heading-tag{
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: .5rem;
+        }
+
+        .heading-secondary{
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+    }
+}
+
+.header-right{
+    grid-column: 7 / -1;
+    background-color: #000;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-columns: repeat(2, 1fr) ;
+
+    &--1__wrapper{
+        grid-column: 1 / -1;
+        overflow: hidden;
+    }
+    
+    &--1__background{
+        background-image: url(../img/hero-3.jpg);
+        transition: all .3s;
+        background-size: cover;
+        height: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, max-content);
+        align-items: flex-end;
+
+        &:hover{
+            background-image: linear-gradient(rgba(#000, .3), rgba(#000, .3)), url(../img/hero-3.jpg);
+            transform: scale(1.03);
+        }
+    }
+
+    &--1__text-box{
+        grid-row: 2 / 3;
+        display: inline;
+        margin-left: 5rem;
+
+        .heading-tag{
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: .5rem;
+        }
+
+        .heading-secondary{
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+    }
+
+    &--2__wrapper{
+        grid-column: 1 / 2;
+        overflow: hidden;
+    }
+    
+    &--2__background{
+        background-image: url(../img/hero-2.jpg);
+        transition: all .3s;
+        background-size: cover;
+        height: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, max-content);
+        align-items: flex-end;
+
+        &:hover{
+            background-image: linear-gradient(rgba(#000, .3), rgba(#000, .3)), url(../img/hero-2.jpg);
+            transform: scale(1.03);
+        }
+    }
+
+    &--2__text-box{
+        grid-row: 2 / 3;
+        margin-left: 5rem;
+
+        .heading-tag{
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: .5rem;
+        }
+
+        .heading-secondary{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+
+    &--3__wrapper{
+        grid-column: 2 / -1;
+        overflow: hidden;
+    }
+    
+    &--3__background{
+        background-image: url(../img/hero-4.jpg);
+        transition: all .3s;
+        background-size: cover;
+        height: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, max-content);
+        align-items: flex-end;
+
+        &:hover{
+            background-image: linear-gradient(rgba(#000, .3), rgba(#000, .3)), url(../img/hero-4.jpg);
+            transform: scale(1.03);
+        }
+    }
+    &--3__text-box{
+        grid-row: 2 / 3;
+        margin-left: 5rem;
+
+        .heading-tag{
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: .5rem;
+        }
+
+        .heading-secondary{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+}
