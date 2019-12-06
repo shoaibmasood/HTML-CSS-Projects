@@ -1,0 +1,77 @@
+.gallery {
+    grid-row: gallery-start / gallery-end ;
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 / -1;
+    grid-gap: 2px;
+    padding: 2px 2px;
+    
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+    .contact-email {
+        grid-row: 1 /2;
+        grid-column: 1/ -1;
+        background-color: #ffff;
+        padding: 10px 0px 15px;
+        color: #252a2b;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .gallery-end{
+        grid-row: 4 / 5 ;
+        grid-column: 1 / -1;
+        background-color: #ffff;
+        padding: 1rem;
+    }
+    
+    &__item {
+        &--8 {
+            grid-row: 2 /3;
+            grid-column: 1 /2 ;
+            
+        }
+
+        &--2 {
+            grid-row: 2 /3;
+            grid-column: 2 /3;
+        }
+        &--5 {
+            grid-row: 2 /3;
+            grid-column: 3 /4;
+        }
+        &--6 {
+            grid-row: 2 / 3;
+            grid-column: 4 /5;
+        }
+        &--3 {
+            grid-row: 3 /4;
+            grid-column: 1 /2;
+        }
+        &--4 {
+            grid-column: 2 /3;
+            grid-row: 3 / 4;
+        }
+        &--7 {
+            grid-column: 3 /4;
+            grid-row: 3 / 4;
+        }
+        &--1 {
+            grid-column: 4 /5;
+            grid-row: 3 / 4;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+}
